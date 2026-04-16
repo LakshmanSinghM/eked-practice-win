@@ -1,3 +1,13 @@
+// Practical Assignment – Collection – filtering
+// Write a filter method that takes an array of any type as its input. As a second argument,
+// the method should accept a class that implements the Filter interface, which contains a single method:
+
+// T apply(T o)
+
+// (parameterized).
+
+// The method must be implemented so that it returns a new array in which the apply function has been applied to each element.
+
 package java_collection;
 
 import java.util.Arrays;
@@ -22,13 +32,13 @@ class DoubleFilter implements Filter<Integer> {
     }
 }
 
-public class FilterMethodPractice<T> {
+public class FilterMethodPractice{
 
     public static <T> T[] filter(T arr[], Filter<T> fitler) {
         T[] cArr = arr.clone();
 
         for (int i = 0; i < arr.length; i++) {
-            // arr[i] = fitler.apply(arr[i]); // not recommeded to change instead creat copy
+            // arr[i] = fitler.apply(arr[i]); // not recommeded to change instead create copy
             cArr[i] = fitler.apply(arr[i]);
         }
         return cArr;
