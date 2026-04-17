@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.lakshman.maven</groupId>
+        <artifactId>GeometryProject</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>com.lakshman.maven.geometryapp</groupId>
+    <artifactId>GeometryApp</artifactId>
+    <packaging>jar</packaging>
+
+    <name>GeometryApp</name>
+    <version>1.0.0</version>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.lakshman.maven.geometry.library</groupId>
+            <artifactId>GeometryLibrary</artifactId>
+            <version>v1.1.0</version>
+            <!--            updagraded from v1.0.0-->
+        </dependency>
+        <dependency>
+            <groupId>com.lakshman.maven.geometryutils</groupId>
+            <artifactId>GeometryUtils</artifactId>
+            <version>1.1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.lakshman.maven.threedimensionalshapes</groupId>
+            <artifactId>ThreeDimensionalShapes</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>
